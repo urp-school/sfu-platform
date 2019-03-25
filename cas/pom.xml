@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>net.openurp.sfu.platform</groupId>
+    <artifactId>sfu-platform-parent</artifactId>
+    <version>0.0.9-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.openurp.sfu.platform</groupId>
+  <artifactId>sfu-platform-cas</artifactId>
+  <packaging>war</packaging>
+  <name>SFU Cas Server</name>
+
+  <properties>
+    <bundle.symbolicName>net.openurp.sfu.cas.server</bundle.symbolicName>
+    <bundle.namespace>net.openurp.sfu.platform.cas</bundle.namespace>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.openurp.platform</groupId>
+      <artifactId>openurp-platform-cas_2.12</artifactId>
+      <version>${openurp.platform.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>net.openurp.sfu.platform</groupId>
+      <artifactId>sfu-platform-info</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.beangle.commons</groupId>
+      <artifactId>beangle-commons-text_2.12</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.beangle.webmvc</groupId>
+      <artifactId>beangle-webmvc-spring-plugin_2.12</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-ehcache</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.beangle.webmvc</groupId>
+      <artifactId>beangle-webmvc-view_2.12</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.beangle.webui</groupId>
+      <artifactId>beangle-webui-bootstrap_2.12</artifactId>
+      <version>${beangle.webui.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+    </dependency>
+  </dependencies>
+
+</project>

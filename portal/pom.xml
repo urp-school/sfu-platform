@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>net.openurp.sfu.platform</groupId>
+    <artifactId>sfu-platform-parent</artifactId>
+    <version>0.0.9-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.openurp.sfu.platform</groupId>
+  <artifactId>sfu-platform-portal</artifactId>
+  <packaging>war</packaging>
+  <name>SFU Portal Server</name>
+
+  <properties>
+    <bundle.symbolicName>net.openurp.sfu.platform.portal</bundle.symbolicName>
+    <bundle.namespace>net.openurp.sfu.platform.portal</bundle.namespace>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.beangle.commons</groupId>
+      <artifactId>beangle-commons-core_2.12</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.openurp.app</groupId>
+      <artifactId>openurp-app-cas_2.12</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>net.openurp.sfu.platform</groupId>
+      <artifactId>sfu-platform-info</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openurp.platform</groupId>
+      <artifactId>openurp-platform-core_2.12</artifactId>
+      <version>${openurp.platform.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.beangle.data</groupId>
+      <artifactId>beangle-data-hibernate_2.12</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-ehcache</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.beangle.commons</groupId>
+      <artifactId>beangle-commons-text_2.12</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.beangle.webmvc</groupId>
+      <artifactId>beangle-webmvc-spring-plugin_2.12</artifactId>
+    </dependency>
+     <dependency>
+      <groupId>org.beangle.webmvc</groupId>
+      <artifactId>beangle-webmvc-view_2.12</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+    </dependency>
+  </dependencies>
+
+</project>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<mvc>
+  <profile name="portal" package="net.openurp.sfu.platform.portal.web.action">
+    <url path="/" suffix=""  style="seo" />
+    <interceptors>
+      <interceptor name="web.Interceptor.security"/>
+    </interceptors>
+  </profile>
+</mvc>

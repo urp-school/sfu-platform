@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>net.openurp.sfu.platform</groupId>
+    <artifactId>sfu-platform-parent</artifactId>
+    <version>0.0.9-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.openurp.sfu.platform</groupId>
+  <artifactId>sfu-platform-portal-resource</artifactId>
+  <packaging>jar</packaging>
+  <name>SFU Portal Server Resources</name>
+
+  <properties>
+    <bundle.symbolicName>net.openurp.sfu.platform.portal.resource</bundle.symbolicName>
+    <bundle.namespace>net.openurp.sfu.platform.portal</bundle.namespace>
+  </properties>
+
+</project>

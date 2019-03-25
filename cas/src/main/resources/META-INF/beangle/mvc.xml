@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<mvc>
+  <profile name="sfu" package="net.openurp.sfu.platform.cas.web.action">
+    <url path="/" suffix=""  style="seo" />
+    <interceptors>
+      <interceptor name="web.Interceptor.security"/>
+    </interceptors>
+  </profile>
+</mvc>
